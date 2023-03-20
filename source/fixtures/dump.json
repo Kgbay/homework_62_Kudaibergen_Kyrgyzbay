@@ -1,0 +1,893 @@
+[
+{
+  "model": "tracker.type",
+  "pk": 1,
+  "fields": {
+    "type_name": "Task",
+    "created_at": "2023-03-02T05:59:59.263Z",
+    "updated_at": "2023-03-02T05:59:59.263Z"
+  }
+},
+{
+  "model": "tracker.type",
+  "pk": 2,
+  "fields": {
+    "type_name": "Bug",
+    "created_at": "2023-03-02T06:00:03.550Z",
+    "updated_at": "2023-03-02T06:00:03.550Z"
+  }
+},
+{
+  "model": "tracker.type",
+  "pk": 3,
+  "fields": {
+    "type_name": "Enhancement",
+    "created_at": "2023-03-02T06:03:03.557Z",
+    "updated_at": "2023-03-02T06:03:03.557Z"
+  }
+},
+{
+  "model": "tracker.type",
+  "pk": 4,
+  "fields": {
+    "type_name": "In process",
+    "created_at": "2023-03-03T04:03:00.151Z",
+    "updated_at": "2023-03-03T04:03:00.151Z"
+  }
+},
+{
+  "model": "tracker.status",
+  "pk": 2,
+  "fields": {
+    "status_name": "New",
+    "created_at": "2023-03-02T06:04:47.720Z",
+    "updated_at": "2023-03-02T06:04:47.720Z"
+  }
+},
+{
+  "model": "tracker.status",
+  "pk": 3,
+  "fields": {
+    "status_name": "In progress",
+    "created_at": "2023-03-02T06:04:51.367Z",
+    "updated_at": "2023-03-02T06:04:51.367Z"
+  }
+},
+{
+  "model": "tracker.status",
+  "pk": 5,
+  "fields": {
+    "status_name": "Done",
+    "created_at": "2023-03-02T06:05:02.687Z",
+    "updated_at": "2023-03-02T06:05:02.687Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 1,
+  "fields": {
+    "summary": "Создание шапки",
+    "description": "Необходимо создать шапку сайта2",
+    "status": 3,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-02T06:35:37.229Z",
+    "updated_at": "2023-03-10T12:00:38.077Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T19:55:20.389Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 2,
+  "fields": {
+    "summary": "Баги",
+    "description": "Найти баги в программе",
+    "status": 3,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-02T11:40:36.606Z",
+    "updated_at": "2023-03-10T12:00:28.984Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-09T06:57:04.696Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 3,
+  "fields": {
+    "summary": "Django bootstrap5",
+    "description": "Оформление сайта с применением django bootrstrap",
+    "status": 3,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-02T11:41:33.627Z",
+    "updated_at": "2023-03-10T12:00:18.476Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-09T08:10:02.197Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 4,
+  "fields": {
+    "summary": "HTML разметка сайта",
+    "description": "Сконструировать html страницу с основными требованиями и задачами",
+    "status": 5,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-02T11:43:20.961Z",
+    "updated_at": "2023-03-10T12:00:08.222Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T19:55:50.246Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 5,
+  "fields": {
+    "summary": "Алгоритмизация и автоматизация задач",
+    "description": "Создать программу основанную на применением алгоритмов на языке программирования Python",
+    "status": 3,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-02T11:44:19.062Z",
+    "updated_at": "2023-03-07T19:04:49.711Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T01:22:54.098Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 22,
+  "fields": {
+    "summary": "Кибербезопасность",
+    "description": "Определение уязвимостей системы",
+    "status": 2,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:01:44.545Z",
+    "updated_at": "2023-03-07T19:05:03.476Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T01:31:01.995Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 23,
+  "fields": {
+    "summary": "HTML",
+    "description": "Создание и поддержка тегов  HTML",
+    "status": 3,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:02:07.766Z",
+    "updated_at": "2023-03-07T19:04:56.485Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-05T13:35:08.775Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 24,
+  "fields": {
+    "summary": "CSS",
+    "description": "Стилизация сайтов с применением CSS",
+    "status": 3,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:04:21.098Z",
+    "updated_at": "2023-03-07T19:05:40.185Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-05T13:35:11.760Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 25,
+  "fields": {
+    "summary": "Монетизация игр",
+    "description": "Монетизация игр на Play Marker & AppleStore",
+    "status": 5,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:04:56.306Z",
+    "updated_at": "2023-03-10T12:06:42.331Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T06:35:53.057Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 26,
+  "fields": {
+    "summary": "Разработка игр на ПК",
+    "description": "Game Dev",
+    "status": 5,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-05T13:08:20.267Z",
+    "updated_at": "2023-03-10T12:06:35.165Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T01:22:20.961Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 27,
+  "fields": {
+    "summary": "Создание интерактивной карты",
+    "description": "Создание интерактивной карты и геопортала с применением JavaScript",
+    "status": 3,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:10:57.552Z",
+    "updated_at": "2023-03-10T12:00:57.662Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-05T13:35:18.430Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 28,
+  "fields": {
+    "summary": "Linux системы",
+    "description": "Поддержка и определенине багов при конструировании операционной системы",
+    "status": 2,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-05T13:13:06.887Z",
+    "updated_at": "2023-03-10T12:00:48.205Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-05T13:35:21.079Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 29,
+  "fields": {
+    "summary": "Автоматизация задач на ускорение операционной системы",
+    "description": "Решение задач по автоматиции с применением алгоритмизации и скриптов на Python",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-05T13:15:44.323Z",
+    "updated_at": "2023-03-07T19:02:00.646Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-05T13:35:24.992Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 30,
+  "fields": {
+    "summary": "Разработка игр на Playstation",
+    "description": "Разработка игрового комплекса, Создание скриптов для взаимодействия с окружающей средой. Игровое коммюните",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-05T16:37:54.150Z",
+    "updated_at": "2023-03-07T19:01:54.691Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T01:22:48.887Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 31,
+  "fields": {
+    "summary": "Создание шапки",
+    "description": "Создание шапки2",
+    "status": 3,
+    "type": 4,
+    "project": 1,
+    "created_at": "2023-03-05T16:41:00.099Z",
+    "updated_at": "2023-03-07T08:17:13.673Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 32,
+  "fields": {
+    "summary": "Применение паттернов проектированияbb",
+    "description": "Паттерные проектирования и алгоритмы",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-06T05:51:18.972Z",
+    "updated_at": "2023-03-07T18:57:19.721Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T01:26:10.389Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 33,
+  "fields": {
+    "summary": "Тестирование",
+    "description": "Провести новое тестирование программного обеспечения",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-06T05:51:34.634Z",
+    "updated_at": "2023-03-07T03:09:17.186Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 34,
+  "fields": {
+    "summary": "Визуализация полученных данных",
+    "description": "Визуализация информации полученные в результате анализа machine learning",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-07T01:39:53.178Z",
+    "updated_at": "2023-03-07T03:09:52.580Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 35,
+  "fields": {
+    "summary": "Тестирование нового приложение",
+    "description": "Тестирование нового приложение",
+    "status": 3,
+    "type": 4,
+    "project": 1,
+    "created_at": "2023-03-07T02:06:08.250Z",
+    "updated_at": "2023-03-07T03:28:27.515Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 36,
+  "fields": {
+    "summary": "Создание программы",
+    "description": "Разработать программное обеспечение",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-07T03:11:05.609Z",
+    "updated_at": "2023-03-07T03:11:42.117Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 37,
+  "fields": {
+    "summary": "Создание программы",
+    "description": "Создание программы",
+    "status": 3,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-07T03:28:01.687Z",
+    "updated_at": "2023-03-07T19:01:48.876Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T03:28:07.289Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 38,
+  "fields": {
+    "summary": "Разработка игр на ПК и на игровую консоль",
+    "description": "Разработка игр на ПК и на игровую консоль",
+    "status": 2,
+    "type": 1,
+    "project": 1,
+    "created_at": "2023-03-07T06:42:42.696Z",
+    "updated_at": "2023-03-07T18:57:34.639Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T06:56:52.881Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 40,
+  "fields": {
+    "summary": "Разработка игр на ПК",
+    "description": "Разработка игр на ПК2",
+    "status": 2,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-07T07:58:30.060Z",
+    "updated_at": "2023-03-07T07:58:30.060Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 41,
+  "fields": {
+    "summary": "Разработка игр на ПК",
+    "description": "Создание шапки",
+    "status": 2,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-07T08:29:00.577Z",
+    "updated_at": "2023-03-07T18:57:28.398Z",
+    "is_deleted": false,
+    "deleted_at": "2023-03-07T16:41:06.049Z"
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 42,
+  "fields": {
+    "summary": "Разработка игр на ПК",
+    "description": "Монетизация игр на Play Marker & AppleStore2",
+    "status": 3,
+    "type": 2,
+    "project": 1,
+    "created_at": "2023-03-07T19:37:11.608Z",
+    "updated_at": "2023-03-07T19:37:11.608Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 43,
+  "fields": {
+    "summary": "Редактирование и обновление мобильных приложений",
+    "description": "Необходимо редактирование мобильных приложений",
+    "status": 3,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-07T19:46:22.814Z",
+    "updated_at": "2023-03-09T10:26:28.442Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 44,
+  "fields": {
+    "summary": "Обновление ПО",
+    "description": "Обновление задач по программированию",
+    "status": 2,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-07T19:48:24.955Z",
+    "updated_at": "2023-03-09T10:25:39.840Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.task",
+  "pk": 45,
+  "fields": {
+    "summary": "Игровая анимация",
+    "description": "Анимирование персонажов игровой индустрии",
+    "status": 2,
+    "type": 3,
+    "project": 1,
+    "created_at": "2023-03-10T12:29:38.792Z",
+    "updated_at": "2023-03-10T12:29:38.792Z",
+    "is_deleted": false,
+    "deleted_at": null
+  }
+},
+{
+  "model": "tracker.project",
+  "pk": 1,
+  "fields": {
+    "start_date": "2023-03-01",
+    "finish_date": "2023-03-09",
+    "name": "Программа",
+    "description": "Проект по разработке ПО и мобильного приложения"
+  }
+},
+{
+  "model": "tracker.project",
+  "pk": 2,
+  "fields": {
+    "start_date": "2023-03-01",
+    "finish_date": "2023-03-05",
+    "name": "Оптимизация",
+    "description": "Работы по оптимизации систем"
+  }
+},
+{
+  "model": "tracker.project",
+  "pk": 3,
+  "fields": {
+    "start_date": "2023-03-21",
+    "finish_date": "2023-03-19",
+    "name": "Проект по МП",
+    "description": "Мобильное приложение и их модификации"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add status",
+    "content_type": 7,
+    "codename": "add_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change status",
+    "content_type": 7,
+    "codename": "change_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete status",
+    "content_type": 7,
+    "codename": "delete_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view status",
+    "content_type": 7,
+    "codename": "view_status"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add task",
+    "content_type": 8,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change task",
+    "content_type": 8,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete task",
+    "content_type": 8,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view task",
+    "content_type": 8,
+    "codename": "view_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add type",
+    "content_type": 9,
+    "codename": "add_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change type",
+    "content_type": 9,
+    "codename": "change_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete type",
+    "content_type": 9,
+    "codename": "delete_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view type",
+    "content_type": 9,
+    "codename": "view_type"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add project",
+    "content_type": 10,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change project",
+    "content_type": 10,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete project",
+    "content_type": 10,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view project",
+    "content_type": 10,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$BZniAYQcwfOfjHpOcDMpsH$5+PAqhFyOAoaLCem7zWDUQGnXE+22C3pEqnlvdDxGfU=",
+    "last_login": "2023-03-07T18:56:51.840Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-03-02T05:37:22.817Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

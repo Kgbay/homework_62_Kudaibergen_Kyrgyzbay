@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="container">
+        {% include 'partial/search.html' %}
+        <h1>Список задач</h1>
+        {% for task in tasks %}
+            <a href="{% url 'task_view' task.pk %}">
+                {% if task.type_id == 1 %}
+                    <div class="form-control" style="background: #ffcc99">
+                        <h3>{{ task.summary }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                {% elif  task.type_id == 2 %}
+                    <div class="form-control" style="background: #ffe699">
+                        <h3>{{ task.summary }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                {% elif  task.type_id == 3 %}
+                    <div class="form-control" style="background: #ffff99">
+                        <h3>{{ task.summary }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                {% elif  task.type_id == 4 %}
+                    <div class="form-control" style="background: #e6ff99 ">
+                        <h3>{{ task.summary }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                {% else %}
+                    <div class="form-control" style="background: #ccff99">
+                        <h3>{{ task.summary }}</h3>
+                        <p>{{ task.description }}</p>
+                    </div>
+                {% endif %}
+            </a>
+        {% endfor %}
+
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+    </div>
+{% endblock content %}

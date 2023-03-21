@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import redirect
 from django.views.generic import TemplateView, CreateView
@@ -18,13 +19,16 @@ class LoginView(TemplateView):
     def post(self, request, *args, **kwargs):
         form = self.form(request.POST)
         if not form.is_valid():
-            return redirect('index')
+            messages.error(request, 'Некорректные данные')
+            return redirect('login')
         username = form.cleaned_data.get('username')
         password = form.cleaned_data.get('password')
         user = authenticate(request, username=username, password=password)
         if not user:
-            return redirect('index')
+            messages.warning(request, "Пользователь не найден")
+            return redirect('login')
         login(request, user)
+        messages.success(request, 'Добро пожаловать')
         next = request.GET.get('next')
         if next:
             return redirect(next)

@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 class Project(models.Model):
@@ -21,3 +22,4 @@ class Project(models.Model):
         null=True,
         blank=True,
         verbose_name="Описание")
+    user = models.ManyToManyField(User)

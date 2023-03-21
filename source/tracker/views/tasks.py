@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.mixins import PermissionRequiredMixin, UserPassesTestMixin
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse, reverse_lazy
 from django.views.generic import DetailView, CreateView, UpdateView, DeleteView
@@ -11,33 +11,34 @@ class TaskDetail(DetailView):
     model = Task
 
 
-class TaskCreateView(PermissionRequiredMixin, LoginRequiredMixin, SuccessMessageMixin, CreateView):
+class GroupPermissionMixin(UserPassesTestMixin):
+
+    def test_func(self):
+        return self.request.user.groups.filter(name__in=['project_manager', 'team_lead', 'admin']).exists()
+
+
+class TaskCreateView(GroupPermissionMixin, SuccessMessageMixin, CreateView):
     template_name = 'task_create.html'
     model = Task
     form_class = TaskForm
     success_message = 'Задача создана'
-    permission_required = 'tracker.change_task'
-    permission_denied_message = 'У вас не хватает прав доступа'
 
     def get_success_url(self):
         return reverse('task_view', kwargs={'pk': self.object.pk})
 
 
-class TaskUpdateView(PermissionRequiredMixin,LoginRequiredMixin,SuccessMessageMixin,UpdateView,):
+class TaskUpdateView(GroupPermissionMixin, SuccessMessageMixin, UpdateView, ):
     template_name = 'task_update.html'
     form_class = TaskForm
     model = Task
     success_message = 'Задача обновлена'
-    permission_required = 'tracker.change_task'
-    permission_denied_message = 'У вас не хватает прав доступа'
 
     def get_success_url(self):
         return reverse('task_view', kwargs={'pk': self.object.pk})
 
 
-class TaskDeleteView(PermissionRequiredMixin, LoginRequiredMixin, DeleteView,):
+class TaskDeleteView(GroupPermissionMixin, SuccessMessageMixin, DeleteView, ):
     template_name = 'task_confirm_remove.html'
     model = Task
     success_url = reverse_lazy('index')
-    permission_required = 'tracker.change_task'
-    permission_denied_message = 'У вас не хватает прав доступа'
+    success_message = 'Задача удалена'

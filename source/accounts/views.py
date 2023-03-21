@@ -25,7 +25,7 @@ class LoginView(TemplateView):
         password = form.cleaned_data.get('password')
         user = authenticate(request, username=username, password=password)
         if not user:
-            messages.warning(request, "Пользователь не найден")
+            messages.warning(request, "Пользователь не найден либо неверный пароль")
             return redirect('login')
         login(request, user)
         messages.success(request, 'Добро пожаловать')
